@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block title %}Contacts{% endblock %}
+{% block content %}
+
+<section class="section pb-5">
+   <div class="container">
+
+      <div class="row mb-5 align-items-end">
+         <div class="col-md-6">
+            <h2>Message</h2>
+            <p class="mb-0">
+               Have questions about the project or need advice? Write to me, I answer all messages.
+            </p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-6 mb-5 mb-md-0">
+            <form action="{% url 'contact' %}" method="post" role="form" class="message-form">
+               {% csrf_token %}
+               
+               
+               <div class="row gy-3">
+
+                  <div class="col-md-6 form-group">
+                     <fieldset>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="name" required>
+                     </fieldset>
+                  </div>
+
+                  <div class="col-md-6 form-group">
+                     <fieldset>
+                        <label for="name">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                     </fieldset>
+                  </div>
+
+                  <div class="col-md-12 form-group">
+                     <fieldset>
+                        <label for="name">Topic</label>
+                        <input type="text" class="form-control" name="subject" id="subject" required>
+                     </fieldset>
+                  </div>
+
+                  <div class="col-md-12 form-group">
+                     <fieldset>
+                        <label for="name">Message text</label>
+                        <textarea class="form-control" name="message" cols="5" rows="10" required></textarea>
+                     </fieldset>
+                  </div>
+
+                  <div class="col-md-6 mt-0 form-group">
+                     <input type="submit" class="readmore d-block w-100" value="Send">
+                  </div>
+
+               </div>
+            </form>
+         </div>
+
+         <div class="col-md-4 ml-auto order-2">
+            <ul class="list-unstyled">
+
+               <br>
+               <br>
+               <li class="mb-3">
+                  <strong class="d-block mb-1">Address</strong>
+                  <span>Bhopal, Madhya Pradesh</span>
+               </li>
+
+               <li class="mb-3">
+                  <strong class="d-block mb-1">Telephone</strong>
+                  <span>+91 8115332787</span>
+               </li>
+
+               <li class="mb-3">
+                  <strong class="d-block mb-1">Email</strong>
+                  <span>shashwat1326@gmail.com</span>
+               </li>
+
+            </ul>
+         </div>
+
+      </div>
+   </div>
+</section>
+{% endblock %}

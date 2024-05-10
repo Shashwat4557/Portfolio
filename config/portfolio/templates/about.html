@@ -1,0 +1,522 @@
+{% extends 'base.html' %}
+{% block title %}About me{% endblock %}
+{% block content %}
+
+<section class="section pb-5">
+
+    <div class="container">
+
+        <div class="row mb-5 align-items-end">
+
+            <h2>ABOUT ME</h2>
+            <br>
+            <p class="mb-0">Hi, I'm  {{ author.name }} {{ author.lastname }}.</p>
+            <br>
+            
+            <div class="col-md-6">   {% comment %} this makes image and paragraph format {% endcomment %}
+
+                <table>
+                    <tr>                     
+                        <td style = "padding-top : 30px;">
+                            <img src="{{ MEDIA_URL }}/media/images/shashwat.jpg" alt="Profile Photo" height="250px" width="265px">
+                        </td>
+
+                        <td style = "padding-left : 30px; ">
+                            <p>A diligent Data Scientist currently pursuing my Graduation in Data Science from </p>
+                            <p>Lakshmi Narain College of Technology - Excellence affiliated with Rajiv Gandhi Proudyogiki Vishwavidyalaya Bhopal.</p>
+                            <p>Seeking an opportunity to establish a career as a Data Scientist exhibiting a strong willingness to become proficient in </p>
+                            <p>Analytical tools, Statistics, and Computing Methodologies in a professional environment.</p>
+                            <p>Eager to contribute meaningfully to the success of the team.</p>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <br>
+            <ul>
+                <li>Currently pursuing my Bachelor of Technology in Computer Science and Engineering - Data Science, from </li>
+                <br>
+                <p>Lakshmi Narain College of Technology - Excellence (2021-2025) with current CGPA of 5.46 in 5th sem.</p>
+                </li>
+                <li>
+                    Completed my Intermediate in P.C.M. from Jai Academy, Jhansi with percentage of 
+                    88.4 % C.B.S.E. Board (2020-2021).
+                </li>
+                <br>
+                <li>
+                    Completed my High Schooling from Vidyawati Nigam Memorial Public School, Banda with percentage of
+                    79.6 % C.B.S.E. Board (2018-2019).
+                </li>
+            </ul>
+        </section>
+
+        <br>
+
+        <!-- Work Experience -->
+        <section>
+            <h2>Work Experience</h2>
+            <br>
+            <div>
+                <h3>Bharat Internship</h3>
+                <ul>
+                    <li>It is a 1 month Data Science Internship by Bharat Intern's.</li>
+                    <br>
+                    <li>In this internship I create 2 Data Science projects.</li>
+                    <br>
+                        <ul>
+                            <li>
+                                SMS Spam Classifier using Support Vector Machine and TFI-DF Vectorization Method using Python Liabraries and code.
+                            </li>
+                            <br>
+                            <p> GitHub Link :- <a href="https://github.com/Shashwat4557/SMS-Classification-Project">Source Code</a></p>
+                            <li>
+                                Cat - Dog Classifier using Convolutional Neural Network (CNN) , Keras and Data Augmentation.
+                            </li>
+                            <br>
+                            <p> GitHub Link :- <a href="https://github.com/Shashwat4557/CAT-DOG-CLASSIFIER-PROJECT">Source Code</a></p>
+                        </ul>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h3>Code- Alpha Internship</h3>
+                <ul>
+                    <li>It is a 3 months Python Programmer Internship by Code - Alpha.</li>
+                    <br>
+                    <li>In this internship till now I created 1 Python project.</li>
+                    <br>
+                        <ul>
+                            <li>
+                                Fibonacci Series Generator using Recursion and iterative Fibonacci algorithms.
+                            </li>
+                            <br>
+                            <p> GitHub Link :- <a href="https://github.com/Shashwat4557/CodeAlpha_FIBONACCI_GENERATOR">Source Code</a></p>
+                        </ul>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h3>Coordinate the Event</h3>
+                <ul>
+                    <li>Coordinate an event of AI- Generative Model session</li>
+                    <br>
+                    <li>In this event i learn how to connect peoples, and make the event successfull by adding 2000+ students from the Bhopal.</li>
+                    <br>
+                        <ul>
+                            <li>
+                                I also learn how to make a Gen-AI model on Google Colab.
+                            </li>
+                            <br>
+                            <p> Drive Link :- <a href="https://drive.google.com/drive/folders/1qa70SdTDhZ0GOquoInJJbyFtt3Cpt4oz?usp=drive_link">Source Code</a></p>
+                        </ul>
+                </ul>
+            </div>
+            
+        </section>
+
+        <br>
+
+        <!-- Personal Projects -->
+        <section>
+            <h2>Personal Projects</h2>
+            <br>
+            <div>
+                <h3>Quiz Application</h3>
+                <ul>
+
+                    <li>The project: "Quiz Application" is a collection of several quizzes like technical, games, sports, etc.</li>
+                    <br>
+                    <li>A user can access/play all of the quizzes and can attempt any of them.</li>
+                    <br>
+                    <li>There will be a limited number of questions and for each correct answer user will get a credit score.</li>
+                    <br>
+                    <li>Users can see answers as well as can ask a query related to it.</li>
+                    <br>
+                    <li>In this project, Django Framework which is a Python framework, MySQL, HTML, CSS, and JavaScript are used. </li>
+                    <br>
+                    <li>This is my solo project.</li>
+                    <br>
+                    <ul>
+                        <p> GitHub Link :- <a href="https://github.com/Shashwat4557/Quiz-Application">Source Code</a></p>
+                    </ul>
+
+                </ul>
+            </div>
+
+            <br>
+
+            <div>
+                <h3>Cat - Dog Image Classification</h3>
+                <ul>
+
+                    <li>This project helps to classify the cat and dog images with the help of Keras and the Convolutional Neural Network (CNN).</li>
+                    <br>
+                    <li>All processing is performed on the dataset of 25,000 images on Jupyter Notebook.</li>
+                    <br>
+                    <li>It takes 6 hours to train the model.</li>
+                    <br>
+                    <li>I have taken 90% of dataset i.e., 22500 photos to training the model (11250 of dog and cat image each),</li>
+                    <br>
+                    <li>I have taken 5% of dataset i.e., 1250 photos for testing of model (625 of dog and cat image each) and </li>
+                    <br>
+                    <li>I have taken 5% of dataset i.e., 1250 photos for the validation of model (625 of dog and cat image each),</li>
+                    <br>
+                    <ul>
+                        <p> GitHub Link :- <a href="https://github.com/Shashwat4557/CAT-DOG-CLASSIFIER-PROJECT">Source Code</a></p>
+                    </ul>
+
+                </ul>
+            </div>
+            
+            <br>
+
+            <div>
+                <h3>Spam SMS Classifier Model</h3>
+                <ul>
+
+                    <li>This Model is made on Jupyter Notebook with the help of the various Python Libraries.</li>
+                    <br>
+                    <li>Many models are tested one by one and based on the Accuracy Score, the best model giving a high accuracy score is choosen.</li>
+                    <br>
+                    <li>The "Support Vector Machine" is used as a model and "Vectorization" is used to map words or phrases from vocabulary</li>
+                    <br>
+                    <p>to a corresponding vector of real numbers which is used to find word predictions, and word similarities/semantics.</p>
+                    <li>NLTK Library is used to pre-process the message by removing the Parts of Speech, Punctuation marks, etc.</li>
+                    <br>
+                    <ul>
+                        <p> GitHub Link :- <a href="https://github.com/Shashwat4557/SMS-Classification-Project">Source Code</a></p>
+                    </ul>
+
+                </ul>
+            </div>
+
+            <br>
+            
+            <div>
+                <h3>Ayurvedic Herbs Recommendation System</h3>
+                <ul>
+                    
+                    <li>The project focused on creating a website or software that helps all Doctors, Practitioners, and Patients to look out </li>
+                    <br>
+                    <p>for the ayurvedic herbs or medicines to be taken for a particular disease by analyzing their allergies and previous medical reports.</p>
+                    <li>In this project, HTML, CSS, JavaScript, Python, Flask, MongoDB, and Machine Learning Algorithm like the Cosine Vector Similarity Algorithm are used.</li>
+                    <br>
+                    <li>Data Pre-Processing and ML- Model is done by me while manually dataset creation, UI/UX, adn other work are done by our team.</li>
+                    <br>
+                    <li>This is the Group Project. </li>
+                    <br>
+                    <ul>
+                        <p> GitHub Link :- <a href="#">Confidential</a></p>
+                    </ul>
+
+                </ul>
+            </div>
+
+            <br>
+            
+            <div>
+                <h3>Dataset Analysis on Data Science Salaries  </h3>
+                <ul>
+
+                    <li>A dataset is analyzed in Jupyter Notebook using Python codes and Libraries. </li>
+                    <br>
+                    <li>Various operations like Pre-Processing, Data Visualization, Dataset Report, E.D.A., and many other things are performed.</li>
+                    <br>
+                    <li>It helps to know which Data Science associated roles have a good scope and has a better salary in the future</li>
+                    <br>
+                    <p>by analyzing and seeing the present data among all the countries and continents.</p>
+                    <ul>
+                        <p> GitHub Link :- <a href="https://github.com/Shashwat4557/Data-Science-Salaries-Prediction-2023">Source Code</a></p>
+                    </ul>
+                
+                </ul>
+            </div>
+
+            <br>
+
+            <div>
+                <h3>School Management System</h3>
+                <ul>
+
+                    <li>The project focused on the ease of the School Management and Parents to see the flow and</li>
+                    <br>
+                    <p>get the data more efficiently and reduce the accessing time.</p>
+                    <li>This project is based on Python Language and for the database I use MySQL.</li>
+                    <br>
+                    <ul>
+                        <p> GitHub Link :- <a href="https://github.com/Shashwat4557/SCHOOL-MANAGEMENT-SYSTEM-PROJECT">Source Code</a></p>
+                    </ul>
+
+                </ul>
+            </div>
+
+            <br>
+            
+            <div>
+                <h3>Printing Press Website</h3>
+                <ul>
+
+                    <li>The shop's name is Kesri Press, which is my family business as well.</li>
+                    <br>
+                    <li>On the website, anyone can order printing materials like Visiting Cards, Wedding Cards, Templates, Holdings, Banners,</li>
+                    <br>
+                    <p> T-shirt Printing, Multicolour or Black-White Posters, Birthday Cards, and as well as Printing Materials like Ink, Papers, Squeeze, Coating, etc.</p>
+                    <li>This is an individual project based on C++, HTML, CSS, JavaScript, Python, and MongoDB.</li>
+                    <br>
+                    <ul>
+                        <p> GitHub Link :- <a href="https://github.com/Shashwat4557/Printing_Press_Business_Website_code">Source Code</a></p>
+                    </ul>
+                
+                </ul>
+            </div>
+
+            <br>
+            
+            <div>
+                <h3>Mini Projects</h3>  
+                <ul>
+
+                    <li>I have made several of mini-projects using HTML, Python, and C++ programming languages.</li>
+                    <br>
+                    <li>The Python projects include Open AI, Alexa, Jarvis, 10+ Games (like Ludo, Flappy Bird, Hangman, Piano, etc), Image to Sketch converter,</li>
+                    <br>
+                    <p>a Wi-Fi password finder, OTP verification, an Instagram Account Detail extractor, a Brightness and Sound Controller by hand using Web-Cam, </p>
+                    <p>Text to Speech, Language Detector, Phone Number Information Extractor, etc.</p>
+                    <li>The HTML projects include an Instagram clone, a Library Management System, a Construction Website, a Printing Press Shop Website.</li>
+                    <br>
+                    <ul>
+                        <p> GitHub Link :- <a href="https://github.com/Shashwat4557/Python-Projects">Source Codes</a></p>
+                    </ul>
+                
+                </ul>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- Skills -->
+        <section>
+            
+            <h2>Skills</h2>
+            <br>
+
+            <ul>
+
+                <li>Python</li>
+                <br>
+                <li>C++</li>
+                <br>
+                <li>Django</li>
+                <br>
+                <li>Data Pre-Processing</li>
+                <br>
+                <li>Machine Learning</li>
+                <br>
+                <li>Mongo-db</li>
+                <br>
+                <li>HTML</li>
+                <br>
+                <li>CSS</li>
+                <br>
+                <li>Java Script</li>
+                <br>
+                <li>SQL</li>
+                <br>
+                <li>Excel</li>
+                <br>
+                <li>Power BI Tool</li>
+                <br>
+
+            </ul>
+            
+        </section>
+
+        <br>
+
+        <!-- Achievements -->
+        <section>
+
+            <h2>Achievements</h2>
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <ul>
+
+                        <li>Infosys - TechA Web Development using HTML and CSS Foundation</li>
+                        <br>         
+                        <li>Infosys - HTML5-The language</li>
+                        <br>                       
+                        <li>Google - Create and Manage Google Cloud Resources</li>
+                        <br>                        
+                        <li>Google - Foundational Data, AI, and ML Tasks in Cloud</li>
+                        <br>
+                        <li>Google - Certificate of Participation on Jetpack Compose Camp</li>
+                        <br>                        
+                        <li>CISCO - Introduction to Cyber Security</li>
+                        <br>                        
+                        <li>CISCO - Introduction to Cloud Security</li>
+                        <br>                        
+                        <li>AICTE CISCO - Virtual Internship Programme</li>
+                        <br>
+                        <li>Coding Ninja - Flair Heaven's Data Structure and Algorithm Workshop on MANIT'S</li>
+                        <br>
+                        <li>Coding Ninja - Flair Heaven's Machine Learning Workshop on MANIT's</li>
+                        <br>
+                        <li>Edukera - Data Science and Machine Learning Internship Program</li>
+                        <br>
+                        <li>AIESEC - Certificate of Participation in Global Village Event</li>
+                        <br>
+
+                    </ul>
+
+                <div>
+
+                <div class="col-md-6">
+
+                    <ul>
+
+                        <li>Infosys - CSS3</li>
+                        <br>
+                        <li>Infosys - Data Base Management System Part-1</li>
+                        <br>
+                        <li>Google - Foundational Infrastructure Tasks in the Cloud</li>
+                        <br>
+                        <li>Google - Networking and Security in the Cloud</li>
+                        <br>                                                                        
+                        <li>Salesforce - Developer Internship Programme</li>
+                        <br>
+                        <li>CISCO - Cyber Security Essential</li>
+                        <br>
+                        <li>CISCO - Introduction to Packet Tracer</li>
+                        <br>
+                        <li>CISCO- Programming Essential in Python</li>
+                        <br>
+                        <li>Coding Ninja - Bootcamp on Learn to Earn from C++</li>
+                        <br>
+                        <li>Coding Ninja - Innovation and Growth Need of the Hour</li>
+                        <br>                        
+                        <li>UP Skillz - Campus Ambassador Offer Letter</li>
+                        <br>
+                        <li>AWS Community Builders - Certificate of Completion</li>
+                        <br>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <br>
+
+        <!-- Extra Co-curricular Activities -->
+        <section>
+            <h2>Extra Co-curricular Activities</h2>
+            <br>
+            <ul>
+                <li>Participated in Smart India Hackathon - 2023</li>
+                <br>
+                <li>Participated in State Level Codictive Hackathon - 2024</li>
+                <br>
+                <li>State Level Badminton Player</li>
+                <br>
+                <li>2 times third position on Badminton RGPV Nodals Tournament</li>
+                <br>
+                <li>Poem and Shayri Writing</li>
+                <br>
+                <li>Reading</li>
+                <br>
+                <li>Music Listening</li>
+                <br>
+                <li>Travelling</li>
+                <br>
+                <li>Hockey</li>
+            </ul>
+        </section>
+
+        <br>
+
+        <!-- FAQ -->
+        <section>
+            <h2>Frequently Asked Questions :-</h2>
+            <details> 
+                <summary>
+                    What is your Name?
+                </summary>
+                <br>
+                <p>
+                    My Name is Shashwat.
+                </p> 
+            </details>
+
+            <details> 
+                <summary>
+                    Are you a Fresher?
+                </summary>
+                <br>
+                <p>
+                    Yes, I am a fresher.
+                </p> 
+            </details>
+            
+            <details> 
+                <summary>
+                    Where do you live?
+                </summary>
+                <br>
+                <p>
+                    I live in Banda, Uttar Pradesh.
+                </p> 
+            </details>
+
+            <details> 
+                <summary>
+                    What is your current semester and CGPA?
+                </summary>
+                <br>
+                <p>
+                    I am currently in 6th Semester and have a CGPA of 8.46 .
+                </p> 
+            </details>
+
+            <details> 
+                <summary>
+                    What is your dream job?
+                </summary>
+                <br>
+                <p>
+                    My dream job is to  work as an Data Science Engineer at Top MNC's.
+                </p> 
+            </details>
+
+            <details> 
+                <summary>
+                    What language do you know?
+                </summary>
+                <br>
+                <p>
+                    I know 2 languages Hindi and English.
+                </p> 
+            </details>
+        </section>
+
+        <br>  
+        <br>
+
+        <div class="col-md-7 mb-5 mb-md-0">
+            <p><a href="{% url 'contact' %}" class="readmore">Write me</a></p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

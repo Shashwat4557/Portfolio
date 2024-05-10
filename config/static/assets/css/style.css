@@ -1,0 +1,121 @@
+/* Set the default font family, weight, and color for the body of the HTML document */
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Style the anchor (<a>) tags, setting their default color and removing the underline decoration */
+a {
+  color: #00bafd;
+  text-decoration: none;
+}
+
+/* Change the color of the anchor tags to black when the mouse hovers over them */
+a:hover {
+  color: #000;
+}
+
+/* Add padding to specific sections of the HTML document */
+.section {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+/* Style the anchor tags inside the element with the class "filters" */
+.filters a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+/* Remove the text decoration when the anchor tags are hovered over, focused, or active */
+.filters a:hover,
+.filters a:focus,
+.filters a:active {
+  text-decoration: none;
+}
+
+/* Change the color of the active anchor tags inside the element with the class "filters" */
+.filters a.active {
+  color: #000;
+}
+
+/* Hide any text with the class ".h3" by setting the font size to 0px */
+.h3 {
+  font-size: 0px;
+}
+
+/* Set the font size for different heading levels */
+.h4 {
+  font-size: 16px;
+}
+
+.heading {
+  font-size: 28px;
+}
+
+/* Style a "Read more" link, adding a border, padding, and changing the color and background on hover */
+.readmore {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  transition: 0.2s all ease;
+  font-weight: 700;
+}
+
+/* Remove the outline when the "Read more" link is active, focused, or hovered over */
+.readmore:active,
+.readmore:focus,
+.readmore:hover {
+  outline: none;
+}
+
+/* Change the color and background of the "Read more" link when hovered over */
+.readmore:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+}
+
+/* Style form elements like input fields and text areas, setting the border radius, background color, and padding */
+.form-control {
+  border-radius: 0;
+  background: #e2ccccb5;
+  border: 1px solid transparent;
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+}
+
+/* Change the background color and remove the outline when the form elements are active or focused */
+.form-control:active,
+.form-control:focus {
+  background: #eff1f4;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+@keyframes animate-loading {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Style the links in the footer and social media icons, changing their color and hover effects */
+.footer a {
+  color: #000;
+}
+.social a:hover {
+  color: #000;
+}

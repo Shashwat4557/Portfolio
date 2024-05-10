@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang = "en">
+
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Portfolio -{% block title %}{% endblock %}</title>
+
+      <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+      <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+      <style>
+         #element 
+         {
+            color: rgb(201, 10, 61);
+         }
+
+         .social.text-md-end a span 
+         {
+            font-size: 24px;
+         }
+
+         .col-sm-6 
+         {
+            font-size: 18px;
+         }
+
+         .col-md-6 
+         {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+
+         .row 
+         {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+
+         .col-md-6 ul 
+         {
+            padding: 0;
+            margin: 0;
+         }
+        
+        .col-md-6 li 
+         {
+            margin-bottom: 10px;
+         }
+      </style>
+
+   </head>
+
+   <body>
+
+      <nav class="navbar navbar-expand-lg bg-light">
+         <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="{% url 'index' %}">
+               <h3>Portfolio</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto me-5">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'index' %}">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'about' %}">ABOUT ME</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{{ MEDIA_URL }}/media/pdfs/resume.pdf" >RESUME</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      
+      <main id="main">
+         {% if messages %}
+         {% for message in messages %}
+         <div class="alert {{ message.tags }} alert-dismissible col-5"
+            role="alert"
+            id="alert">
+            <strong>{{ message }}</strong>
+            <button type="button"
+               class="btn-close"
+               data-bs-dismiss="alert"
+               aria-label="Close"></button>
+         </div>
+         {% endfor %}
+         {% endif %}
+         {% block content %}{% endblock %}
+      </main>
+
+      <footer class="footer" role="contentinfo">
+         <div class="container">
+            <div class="row">
+
+               <div class="col-sm-6">
+                  <p class="mb-1">&copy; {% now "Y" %} Shashwat Srivastava</p>
+               </div>
+               
+               <div class="col-sm-6 social text-md-end">
+                  <a href="mailto:shashwat1326@gmail.com" ><span class="bx bxl-gmail"></span></a>
+                  <a href="https://github.com/Shashwat4557"><span class="bx bxl-github"></span></a>
+                  <a href="tel:+91 8115332787"><span class="bx bx-phone-call"></span></a>
+                  <a href="https://linkedin.com/in/shashwat-srivastava-b03389224"><span class="bx bxl-linkedin"></span></a>
+               </div>
+               
+            </div>
+         </div>
+      </footer>
+
+      <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+      <script>
+        var typed = 
+        new Typed('#element', 
+        { strings: ['<i>Data Scientist</i>', '<i>Web Devloper</i>', '<i>Python Devloper.</i>'], typeSpeed: 70, } 
+        );
+      </script>
+
+   </body>
+</html>
